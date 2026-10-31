@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ismi Anjar Farida, S.S.I. — Information Governance, Research & Data Analytics Portfolio</title>
+  <meta name="description" content="Professional portfolio of Ismi Anjar Farida, S.S.I. — Library and Information Science graduate specializing in Document & Records Governance, Research Data Management, Bibliometric Analysis, and IoT Operational Monitoring." />
+  
+  <!-- Tetap memuat stylesheet asli dari build sebelumnya untuk menjaga konsistensi font & reset -->
+  <link rel="stylesheet" crossorigin href="/Portofolio_Ismi/assets/index-qBT_7xDY.css">
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans untuk konsistensi tipografi minimalis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-card: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --accent-primary: #1e3a8a;
+      --accent-secondary: #2563eb;
+      --accent-light: #eff6ff;
+      --border-color: #e2e8f0;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      line-height: 1.65;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-primary);
+      line-height: 1.25;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Navigation */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4.5rem;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--accent-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .brand span {
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-secondary);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-color);
+      border-radius: 0.5rem;
+      padding: 0.45rem 0.65rem;
+      cursor: pointer;
+      color: var(--text-primary);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-secondary);
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      color: var(--accent-primary);
+      border-color: var(--border-color);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent-secondary);
+      background-color: var(--accent-light);
+    }
+
+    /* Section Defaults */
+    section {
+      padding: 4.5rem 0;
+    }
+
+    section:nth-of-type(even) {
+      background-color: var(--bg-secondary);
+    }
+
+    .section-header {
+      margin-bottom: 2.75rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-secondary);
+      background-color: var(--accent-light);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.65rem;
+    }
+
+    .section-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      max-width: 680px;
+      margin-top: 0.4rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 5rem 0 4.5rem;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--accent-light);
+      color: var(--accent-primary);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-headline {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--accent-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .hero-desc {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .expertise-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.85rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 500;
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      padding: 0.3rem 0.75rem;
+      border-radius: 0.4rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .hero-photo-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-photo-card {
+      background: #ffffff;
+      padding: 0.85rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      max-width: 310px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero-photo-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.65rem;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .metric-val {
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--accent-primary);
+    }
+
+    .metric-lbl {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    /* Cards & Grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.65rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Timeline / Experience */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .exp-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .exp-role {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .exp-company {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent-secondary);
+    }
+
+    .exp-period {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg-secondary);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+    }
+
+    .exp-list {
+      padding-left: 1.2rem;
+      color: var(--text-secondary);
+      font-size: 0.93rem;
+      margin-bottom: 1rem;
+    }
+
+    .exp-list li {
+      margin-bottom: 0.45rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.85rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.35rem;
+      background-color: var(--accent-light);
+      color: var(--accent-primary);
+    }
+
+    /* Project Cards */
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .project-thumb-wrap {
+      position: relative;
+      height: 210px;
+      background: #e2e8f0;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .project-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-thumb-wrap img {
+      transform: scale(1.03);
+    }
+
+    .gallery-count-badge {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      background: rgba(15, 23, 42, 0.82);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 0.35rem;
+    }
+
+    .project-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+
+    .project-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.65rem;
+    }
+
+    .project-detail-block {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.65rem;
+    }
+
+    .project-detail-block strong {
+      color: var(--text-primary);
+    }
+
+    .project-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Modal Lightbox for Project Evidence */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #ffffff;
+      max-width: 920px;
+      width: 100%;
+      max-height: 90vh;
+      border-radius: var(--radius-lg);
+      overflow-y: auto;
+      padding: 1.75rem;
+      position: relative;
+    }
+
+    .modal-close {
+      position: sticky;
+      top: 0;
+      float: right;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .modal-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .modal-gallery-grid img {
+      width: 100%;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid, .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      .hero-photo-wrap {
+        order: -1;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        padding: 1.25rem;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">Ismi Anjar Farida <span>| S.S.I.</span></a>
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">☰ Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#organization">Organization</a></li>
+        <li><a href="#skills">Skills & Certs</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding: 0.45rem 0.95rem; color: #fff;">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 1. HOME / INTRODUCTION -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span>● BNSP Certified in Office Administration & Smart Manufacturing (Predictive Maintenance)</span>
+        </div>
+        <h1 class="hero-title">Ismi Anjar Farida, S.S.I.</h1>
+        <p class="hero-headline">
+          Information & Library Science Professional | Document & Records Governance | Research & Data Analytics
+        </p>
+        <p class="hero-desc">
+          Detail-oriented Bachelor of Library and Information Science graduate from <strong>Padjadjaran University (GPA 3.74/4.00)</strong> with proven expertise in high-volume official correspondence, corporate reporting, confidential information governance, research data management (10,000+ records), bibliometric analysis, and IoT-based operational dashboards. Recognized for maintaining <strong>100% data integrity</strong> and streamlining administrative and technical workflows.
+        </p>
+        <div class="expertise-pills">
+          <span class="pill">Document & Records Control</span>
+          <span class="pill">Research Data Management (RStudio)</span>
+          <span class="pill">Bibliometric & SLR Analysis</span>
+          <span class="pill">Open Journal Systems (OJS)</span>
+          <span class="pill">IoT Predictive Maintenance Dashboard</span>
+          <span class="pill">Corporate Administration</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore Portfolio & Evidence</a>
+          <!-- Catatan: Unggah file PDF CV terbaru Anda dengan nama Ismi_Anjar_Farida_CV.pdf di root repo -->
+          <a href="./Ismi_Anjar_Farida_CV.pdf" download class="btn btn-outline">Download Latest CV (PDF)</a>
+          <a href="https://linkedin.com/in/ismi-anjar-farida-792393313/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn Profile ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-card">
+          <img src="/Portofolio_Ismi/assets/Foto_Profil_Ismi-1-BRx8tJcf.png" alt="Ismi Anjar Farida, S.S.I." />
+          <div class="hero-metrics">
+            <div>
+              <div class="metric-val">3.74</div>
+              <div class="metric-lbl">GPA / 4.00</div>
+            </div>
+            <div>
+              <div class="metric-val">10,000+</div>
+              <div class="metric-lbl">Records Cleaned</div>
+            </div>
+            <div>
+              <div class="metric-val">100%</div>
+              <div class="metric-lbl">Data Integrity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT ME -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Bridging Information Governance, Research & Digital Technology</h2>
+        <p class="section-subtitle">
+          Combining structured principles of Library and Information Science with quantitative data processing and modern operational monitoring.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">Professional Journey & Career Focus</h3>
+          <p style="color: var(--text-secondary); font-size: 0.94rem; margin-bottom: 0.85rem;">
+            My career trajectory spans governmental higher education administration (<strong>LLDikti Region 3 Jakarta</strong>), academic research and university library automation (<strong>Padjadjaran University</strong>), and industrial smart manufacturing training (<strong>PT Liman Tangguh Jaya & BBPVP Bandung</strong>).
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.94rem;">
+            Whether managing hundreds of institutional research contracts, reconciling 10,000+ metadata records in RStudio, publishing Scopus-indexed Systematic Literature Reviews, or building real-time Arduino/ESP32 maintenance dashboards, I bring zero-error precision and systematic documentation to every project.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">Formal Education & Core Interests</h3>
+          <div style="margin-bottom: 1rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--border-color);">
+            <div style="display: flex; justify-content: space-between; font-weight: 700;">
+              <span>Padjadjaran University (Unpad)</span>
+              <span style="color: var(--accent-secondary);">Aug 2021 – Jan 2026</span>
+            </div>
+            <div style="font-size: 0.92rem; color: var(--text-secondary); font-weight: 600;">
+              Bachelor of Library and Information Science (S.S.I.) — GPA: 3.74 / 4.00
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">
+              Thesis: <em>Augmented Reality Publication Trends in Libraries (A Bibliometric Study of Scopus-Indexed Publications 2014–2024)</em>
+            </div>
+          </div>
+          <div style="font-size: 0.88rem; font-weight: 600; margin-bottom: 0.4rem;">Academic & Professional Focus Areas:</div>
+          <div class="tag-row">
+            <span class="tag">Information & Research Management</span>
+            <span class="tag">Bibliometric Analysis</span>
+            <span class="tag">Digital Information Management</span>
+            <span class="tag">Research Methodology</span>
+            <span class="tag">Information Organization</span>
+            <span class="tag">Data & Information Visualization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROFESSIONAL & INTERNSHIP EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Work & Internship Experience</h2>
+        <p class="section-subtitle">
+          Verified record of professional roles and internships across academic research, government agency operations, and smart manufacturing.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- 1. Unpad Data Management & Research Assistant -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Data Management & Research Assistant</div>
+              <div class="exp-company">Universitas Padjadjaran (Multiple Projects) — Sumedang, West Java</div>
+            </div>
+            <span class="exp-period">Mar 2026 – Present</span>
+          </div>
+          <ul class="exp-list">
+            <li><strong>High-Volume Data Governance:</strong> Extracted, cleaned, and managed over <strong>10,000 complex data records</strong> using advanced validation tools, ensuring dataset accuracy and consistency prior to large-scale analysis.</li>
+            <li><strong>Metadata Reconciliation:</strong> Integrated and reconciled extracted metadata using <strong>RStudio</strong>, matching records against source datasets to produce accurate and analysis-ready final datasets.</li>
+            <li><strong>Workflow Design:</strong> Designed independent data management workflows spanning from data collection to final dataset preparation, demonstrating strong analytical and project management capabilities.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">RStudio</span>
+            <span class="tag">Research Data Management</span>
+            <span class="tag">Metadata Validation</span>
+            <span class="tag">Data Cleaning (10,000+ Records)</span>
+          </div>
+        </div>
+
+        <!-- 2. PT Liman Tangguh Jaya -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Job Training — Smart Manufacturing</div>
+              <div class="exp-company">PT Liman Tangguh Jaya — Bandung, West Java</div>
+            </div>
+            <span class="exp-period">Oct 2025</span>
+          </div>
+          <ul class="exp-list">
+            <li><strong>Optimized Production Continuity:</strong> Analyzed manufacturing scheduling workflows to identify and mitigate critical dependencies, ensuring seamless operations in high-speed production environments.</li>
+            <li><strong>Engineered High-Precision IoT Systems:</strong> Developed a real-time data acquisition system using <strong>Arduino (C++)</strong>, achieving <strong>100% sensor functionality</strong> through rigorous calibration and automated CSV data logging.</li>
+            <li><strong>Modernized Operational Monitoring:</strong> Designed a web-based operational dashboard featuring real-time performance visualization, threshold alerts, and CSV data logging as a scalable foundation for predictive maintenance strategies.</li>
+            <li><strong>Hardware Integration:</strong> Assembled and maintained IoT hardware using precision tools, ensuring reliable machine condition monitoring during testing cycles.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Arduino (C++)</span>
+            <span class="tag">IoT Data Acquisition</span>
+            <span class="tag">Web Operational Dashboard</span>
+            <span class="tag">Predictive Maintenance</span>
+            <span class="tag">CSV Data Logging</span>
+          </div>
+        </div>
+
+        <!-- 3. LLDikti Region 3 Jakarta -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Journal Management Internship (MSIB Program)</div>
+              <div class="exp-company">Lembaga Layanan Pendidikan Tinggi (LLDikti) Region 3 Jakarta — East Jakarta</div>
+            </div>
+            <span class="exp-period">Sep 2024 – Dec 2024</span>
+          </div>
+          <ul class="exp-list">
+            <li><strong>Accelerated Book Publication (75% Faster Turnaround):</strong> Managed and accelerated the end-to-end publication process of a four-chapter technical book, completing the project in <strong>1 week against a 1-month deadline</strong> with full compliance with official publication standards.</li>
+            <li><strong>OJS Outage Business Continuity:</strong> Ensured editorial workflow continuity during a nationwide OJS system outage by performing manual quality screenings and compliance checks for all incoming journal articles, maintaining <strong>100% adherence</strong> to publication standards and preventing backlog.</li>
+            <li><strong>Large-Scale Research Contract Archiving:</strong> Optimized data processing and structured archiving for hundreds of institutional research contracts, maintaining <strong>100% data integrity</strong> and improving retrieval speed for institutional reporting.</li>
+            <li><strong>Strategic Liaison ('Smart Village' Program):</strong> Systematically handled high-volume official correspondence and activity documentation to maintain seamless communication between governmental agencies and external stakeholders.</li>
+            <li><strong>Academic Literacy Webinars & Podcasts:</strong> Facilitated professional literacy webinars on academic article writing for <strong>100+ lecturers</strong> across LLDikti Region 3 and coordinated podcast/webinar resource fulfillment with external partners.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Open Journal Systems (OJS)</span>
+            <span class="tag">Official Correspondence</span>
+            <span class="tag">Research Contract Archiving</span>
+            <span class="tag">Technical Book Publishing</span>
+            <span class="tag">Stakeholder Liaison</span>
+          </div>
+        </div>
+
+        <!-- 4. Kandaga Unpad -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Library Assistant Intern</div>
+              <div class="exp-company">Kandaga Unpad (Central Library, Padjadjaran University) — Sumedang, West Java</div>
+            </div>
+            <span class="exp-period">Jan 2024 – Feb 2024</span>
+          </div>
+          <ul class="exp-list">
+            <li><strong>System Downtime Stock Opname:</strong> Executed physical stock opname and inventory auditing for <strong>2 large storage racks within 1 week</strong>, utilizing Google Spreadsheets during system downtime while maintaining <strong>100% data integrity</strong>.</li>
+            <li><strong>Database Validation & Cataloging:</strong> Inputted, updated, and validated metadata into the digital library automation system within a strict 1-week deadline, improving information retrieval speed and inventory tracking accuracy.</li>
+            <li><strong>Information Literacy Content Creation:</strong> Developed <strong>3 types of information literacy content</strong> and curated comprehensive bibliographies aligned with the <em>'learning how to learn'</em> philosophy.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Library Automation Systems</span>
+            <span class="tag">Metadata & Cataloging</span>
+            <span class="tag">Inventory Auditing</span>
+            <span class="tag">Google Spreadsheets</span>
+            <span class="tag">Information Literacy</span>
+          </div>
+        </div>
+
+        <!-- 5. Informatio Journal UNPAD -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Open Journal Systems (OJS) Administrator Intern</div>
+              <div class="exp-company">Informatio Journal UNPAD — Sumedang, West Java</div>
+            </div>
+            <span class="exp-period">Jul 2022 – Oct 2022</span>
+          </div>
+          <ul class="exp-list">
+            <li><strong>OJS User Administration:</strong> Managed account creation, user data updates, and access issue resolution to support smooth editorial operations.</li>
+            <li><strong>Rapid Onboarding Execution:</strong> Registered and configured OJS accounts for <strong>18 interns within one day</strong>, enabling timely system orientation and editorial access.</li>
+            <li><strong>Metadata Governance:</strong> Managed article metadata and journal documents within OJS to maintain information accuracy and facilitate digital document retrieval.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Open Journal Systems (OJS)</span>
+            <span class="tag">Editorial Administration</span>
+            <span class="tag">Digital Metadata Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. RESEARCH EXPERIENCE -->
+  <section id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic & Empirical Research</span>
+        <h2 class="section-title">Research Experience & Methodology</h2>
+        <p class="section-subtitle">
+          Structured documentation of research background, objectives, methodologies, analytical tools, and scholarly outputs.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Research 1 -->
+        <div class="card">
+          <div class="project-category">Mar 2026 – Present | Universitas Padjadjaran</div>
+          <h3 style="font-size: 1.12rem; margin-bottom: 0.65rem;">Large-Scale Multi-Project Research Data Management</h3>
+          <p class="project-detail-block"><strong>Background & Objectives:</strong> Establishing standardized, error-free datasets from heterogeneous raw sources to support institutional research analysis.</p>
+          <p class="project-detail-block"><strong>Methodology & Processing:</strong> End-to-end extraction, cleaning, validation, and relational reconciliation of <strong>10,000+ complex data records</strong> against primary source datasets.</p>
+          <p class="project-detail-block"><strong>Analytical Tools:</strong> RStudio, Advanced MS Excel, Data Validation Tools.</p>
+          <p class="project-detail-block"><strong>Research Outputs:</strong> Reconciled, analysis-ready master datasets and reusable independent data management workflows.</p>
+        </div>
+
+        <!-- Research 2 -->
+        <div class="card">
+          <div class="project-category">2025 – 2026 | Bachelor Thesis (S1)</div>
+          <h3 style="font-size: 1.12rem; margin-bottom: 0.65rem;">Bibliometric Study of Augmented Reality in Libraries (2014–2024)</h3>
+          <p class="project-detail-block"><strong>Background & Objectives:</strong> Mapping global research trends, co-authorship networks, and thematic evolution of Augmented Reality (AR) adoption in libraries over a 10-year span.</p>
+          <p class="project-detail-block"><strong>Methodology & Processing:</strong> Quantitative bibliometric analysis of Scopus-indexed publications (2014–2024), metadata standardization, and network clustering.</p>
+          <p class="project-detail-block"><strong>Analytical Tools:</strong> Scopus Database, RStudio (Bibliometrix / Biblioshiny), VOSviewer, MS Excel.</p>
+          <p class="project-detail-block"><strong>Research Outputs:</strong> Bachelor Thesis (S1) at Padjadjaran University and visual network maps of emerging library technologies.</p>
+        </div>
+
+        <!-- Research 3 -->
+        <div class="card">
+          <div class="project-category">2025 | Scopus Q3 & Sinta 1 Published Research</div>
+          <h3 style="font-size: 1.12rem; margin-bottom: 0.65rem;">Systematic Literature Review (SLR): AR for Library Digital Assets</h3>
+          <p class="project-detail-block"><strong>Background & Objectives:</strong> Investigating how Augmented Reality (AR) technology is applied for the visualization and management of digital assets in modern libraries.</p>
+          <p class="project-detail-block"><strong>Methodology & Processing:</strong> Systematic Literature Review (SLR) involving structured literature search, inclusion/exclusion screening, and evidence synthesis.</p>
+          <p class="project-detail-block"><strong>Analytical Tools:</strong> Scopus, Rayyan AI (for systematic screening), Reference Management Tools.</p>
+          <p class="project-detail-block"><strong>Research Outputs:</strong> First-author peer-reviewed article published in <em>Record and Library Journal (RLJ)</em> Vol. 11 No. 2 (2025).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PROJECTS & PORTFOLIO (WITH EXISTING ASSET GALLERIES) -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Evidence-Based Portfolio</span>
+        <h2 class="section-title">Featured Projects & Work Documentation</h2>
+        <p class="section-subtitle">
+          Click on any project card to view the complete visual documentation and artifacts stored in the portfolio repository.
+        </p>
+      </div>
+
+      <div class="grid-2" id="projectsContainer">
+        <!-- Rendered dynamically from verified CV + repository assets below -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Scholarly Works</span>
+        <h2 class="section-title">Publications & Editorial Contributions</h2>
+        <p class="section-subtitle">
+          Peer-reviewed journal articles, edited anthology volumes, and academic thesis research.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <span class="tag" style="margin-bottom: 0.4rem; display: inline-block;">Scopus-Indexed Q3 | Sinta 1 | First Author</span>
+              <div class="exp-role">A systematic review of the application of augmented reality (AR) technology for the visualization and management of digital assets in libraries</div>
+              <div class="exp-company">Record and Library Journal (RLJ), Vol. 11 No. 2</div>
+            </div>
+            <span class="exp-period">2025</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--text-secondary);">
+            <strong>Research Contribution:</strong> Led the systematic literature review, screening protocol using Rayyan AI, and evidence synthesis evaluating AR frameworks for digital asset visualization and information management in libraries.
+          </p>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <span class="tag" style="margin-bottom: 0.4rem; display: inline-block;">Bachelor Thesis (S1) | Sole Author</span>
+              <div class="exp-role">Augmented Reality Publication Trends in Libraries (A Bibliometric Study of Scopus-Indexed Publications 2014–2024)</div>
+              <div class="exp-company">Faculty of Communication Sciences, Padjadjaran University</div>
+            </div>
+            <span class="exp-period">2026</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--text-secondary);">
+            <strong>Research Contribution:</strong> Conducted comprehensive bibliometric mapping using Biblioshiny (RStudio) and VOSviewer to analyze a decade of global Scopus-indexed literature on AR applications in library science.
+          </p>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <span class="tag" style="margin-bottom: 0.4rem; display: inline-block;">Book Editor | Anthology Series</span>
+              <div class="exp-role">Future Jakarta – Bunga Rampai, Volume 2, 3, and 4</div>
+              <div class="exp-company">Penerbit Gunadarma</div>
+            </div>
+            <span class="exp-period">2025</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--text-secondary);">
+            <strong>Editorial Contribution:</strong> Served as Editor across three volumes, managing manuscript structure, editorial quality control, and compliance with publication standards.
+          </p>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <span class="tag" style="margin-bottom: 0.4rem; display: inline-block;">Journal Article | First Author</span>
+              <div class="exp-role">Kebijakan/Regulasi yang Dilakukan oleh Petugas Museum Geologi Bandung</div>
+              <div class="exp-company">Buletin Perpustakaan Universitas Islam Indonesia, Vol. 6 No. 1</div>
+            </div>
+            <span class="exp-period">2023</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--text-secondary);">
+            <strong>Research Contribution:</strong> Investigated institutional policies, visitor regulations, and information governance practices implemented by officers at the Bandung Geological Museum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ORGANIZATIONAL EXPERIENCE -->
+  <section id="organization">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Leadership & Governance</span>
+        <h2 class="section-title">Organizational Experience</h2>
+        <p class="section-subtitle">
+          Proven track record in institutional administration, licensing negotiation, and strategic communication.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="project-category">Jan 2023 – Jan 2025</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Public Relations</h3>
+          <div style="font-size: 0.88rem; font-weight: 600; color: var(--accent-secondary); margin-bottom: 0.75rem;">Bridge Unpad Student Activity Unit</div>
+          <ul class="exp-list" style="font-size: 0.88rem;">
+            <li>Strengthened organizational synergy by facilitating high-level information exchange and managing professional broadcasts.</li>
+            <li>Established and maintained strategic partnerships with external parties to obtain competitive information and meet organizational needs.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="project-category">Oct 2022 – May 2023</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">First Secretary</h3>
+          <div style="font-size: 0.88rem; font-weight: 600; color: var(--accent-secondary); margin-bottom: 0.75rem;">Epicentrum Fikom Unpad 2023</div>
+          <ul class="exp-list" style="font-size: 0.88rem;">
+            <li>Designed a standardized official correspondence request framework across multiple departments for an international-scale institutional event.</li>
+            <li>Led complex licensing negotiations with senior faculty leadership and external partners with <strong>100% legal/administrative adherence</strong>.</li>
+            <li>Managed meeting minutes for <strong>20+ high-level strategic planning sessions</strong> and compiled final accountability reports within a strict 1-week timeline.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="project-category">Oct 2022</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Event Conceptor</h3>
+          <div style="font-size: 0.88rem; font-weight: 600; color: var(--accent-secondary); margin-bottom: 0.75rem;">Epicentrum Fikom Unpad</div>
+          <ul class="exp-list" style="font-size: 0.88rem;">
+            <li>Designed impactful event concepts addressing relevant social issues in collaboration with multi-functional teams.</li>
+            <li>Authored actionable activity outlines and tracked strategic planning meeting minutes to ensure cross-functional execution.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. SKILLS, CERTIFICATIONS & TRAINING -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies & Credentials</span>
+        <h2 class="section-title">Technical Skills, Certifications & Training</h2>
+        <p class="section-subtitle">
+          Categorized skills and professional certifications strictly backed by project and work evidence.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom: 2.5rem;">
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.65rem;">1. Data Analysis & Visualization</h3>
+          <div class="tag-row">
+            <span class="tag">High-Volume Data Governance</span>
+            <span class="tag">Zero-Error Data Handling</span>
+            <span class="tag">RStudio</span>
+            <span class="tag">Advanced MS Excel (Pivot, VLOOKUP, Mail Merge)</span>
+            <span class="tag">Data Translation</span>
+            <span class="tag">Qualitative & Quantitative Analysis</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.65rem;">2. Research & Bibliometric Analysis</h3>
+          <div class="tag-row">
+            <span class="tag">Systematic Literature Review (SLR)</span>
+            <span class="tag">Bibliometric Analysis</span>
+            <span class="tag">Biblioshiny / Bibliometrix</span>
+            <span class="tag">VOSviewer</span>
+            <span class="tag">Rayyan AI</span>
+            <span class="tag">Scopus</span>
+            <span class="tag">Research Data Management</span>
+            <span class="tag">Scientific Writing</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.65rem;">3. Document & Records Management</h3>
+          <div class="tag-row">
+            <span class="tag">Legal & Corporate Document Control</span>
+            <span class="tag">Confidential Data Management</span>
+            <span class="tag">Administrative Reporting & Correspondence</span>
+            <span class="tag">Open Journal Systems (OJS)</span>
+            <span class="tag">Metadata & Bibliographic Management</span>
+            <span class="tag">Database Auditing</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.65rem;">4. Programming & Technical Tools</h3>
+          <div class="tag-row">
+            <span class="tag">Arduino IDE (C++)</span>
+            <span class="tag">ESP32 Sensor Integration</span>
+            <span class="tag">IoT Real-Time Data Acquisition</span>
+            <span class="tag">Web Dashboard Monitoring</span>
+            <span class="tag">Automated CSV Data Logging</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.65rem;">5. Office & Productivity Tools</h3>
+          <div class="tag-row">
+            <span class="tag">Microsoft Office Suite</span>
+            <span class="tag">Executive Presentation Design (Advanced PowerPoint)</span>
+            <span class="tag">Google Workspace (Spreadsheets, Docs)</span>
+            <span class="tag">Reference Management Software</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.65rem;">6. Professional & Soft Skills</h3>
+          <div class="tag-row">
+            <span class="tag">Stakeholder Coordination & Negotiation</span>
+            <span class="tag">VVIP Handling & Protocol Execution</span>
+            <span class="tag">Analytical Thinking</span>
+            <span class="tag">Strict Confidentiality</span>
+            <span class="tag">Operational Resilience</span>
+            <span class="tag">Time Management</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications & Training -->
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 1rem;">Professional Certifications</h3>
+          <ul class="exp-list">
+            <li>
+              <strong>BNSP Certification — Manufacture (2025):</strong> Certified by the Indonesian Professional Certification Authority (BNSP) in the qualification <em>"Developing Predictive Maintenance Devices For Industrial Machines"</em>.
+            </li>
+            <li>
+              <strong>RevoU Data Analytics Mini Course (2025):</strong> Intensive 2-week training program in the field of Data Analytics.
+            </li>
+            <li>
+              <strong>BNSP Certification — Office Administration (2024):</strong> Certified by the Indonesian Professional Certification Authority (BNSP) in the qualification <em>"Office Administration Management"</em>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 1rem;">Specialized Technical Training</h3>
+          <div style="font-weight: 700; color: var(--text-primary);">Project Based Learning (PBL) — BBPVP Bandung (Oct 2025)</div>
+          <div style="font-size: 0.88rem; color: var(--accent-secondary); font-weight: 600; margin-bottom: 0.6rem;">
+            Developing Predictive Maintenance Devices For Industrial Machines (Smart Manufacturing)
+          </div>
+          <ul class="exp-list" style="font-size: 0.88rem;">
+            <li>Integrated vibration and electric current sensors using <strong>ESP32</strong> and processed operational data for real-time machine condition monitoring.</li>
+            <li>Designed a preventive maintenance cycle framework using <strong>Design Thinking</strong> to improve machine uptime reliability.</li>
+            <li>Developed C++ programs in Arduino IDE and built a web-based monitoring dashboard to support data-driven maintenance decisions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CONTACT -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 0.35rem;">Ismi Anjar Farida, S.S.I.</h2>
+          <p style="font-size: 0.92rem; color: #94a3b8;">
+            Open for opportunities in Document & Records Control, Corporate Administration, Research Data Management, and Data Analytics.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <a href="mailto:ismi.anjar@gmail.com" class="btn btn-primary">✉ ismi.anjar@gmail.com</a>
+          <a href="https://wa.me/6285225177286" target="_blank" rel="noopener" class="btn btn-outline" style="background: transparent; color: #fff; border-color: #334155;">✆ +62 852-2517-7286</a>
+          <a href="https://linkedin.com/in/ismi-anjar-farida-792393313/" target="_blank" rel="noopener" class="btn btn-outline" style="background: transparent; color: #fff; border-color: #334155;">in LinkedIn</a>
+        </div>
+      </div>
+      <div style="margin-top: 1.5rem; font-size: 0.82rem; color: #64748b; display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <span>© 2026 Ismi Anjar Farida. All rights reserved.</span>
+        <span>Hosted on GitHub Pages — https://ismi21002.github.io/Portofolio_Ismi/</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR PROJECT DOCUMENTATION -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModalBtn">✕ Close</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO DATA & INTERACTIVE SCRIPT -->
+  <script>
+    const ASSET_BASE = '/Portofolio_Ismi/assets/';
+
+    // Data proyek 100% berdasarkan CV terbaru & terhubung ke seluruh file gambar asli di folder /assets/
+    const PROJECTS_DATA = [
+      {
+        id: 'iot-predictive-maintenance',
+        category: 'Smart Manufacturing & IoT System (Oct 2025)',
+        title: 'IoT-Based Predictive Maintenance & Real-Time Data Acquisition Dashboard',
+        overview: 'End-to-end development of an industrial machine condition monitoring system integrating hardware sensors, microcontroller programming, and a web-based operational dashboard.',
+        problem: 'High-speed production environments require continuous machine condition monitoring to prevent unexpected downtime and schedule dependencies.',
+        role: 'Smart Manufacturing Trainee — Hardware Assembly, Sensor Calibration, C++ Firmware & Web Dashboard Designer.',
+        workflow: 'Analyzed manufacturing scheduling dependencies → Integrated vibration & current sensors with Arduino/ESP32 (C++) → Calibrated sensors to 100% functionality → Built real-time web visualization & automated CSV logging.',
+        tools: ['Arduino IDE (C++)', 'ESP32', 'Web Dashboard', 'Automated CSV Logging', 'Design Thinking'],
+        deliverables: '100% calibrated real-time sensor acquisition unit, automated CSV logging pipeline, and web operational dashboard with threshold alerts.',
+        images: [
+          'real_time_data_acquisition_system-CrZw9jcP.png',
+          'real_time_data_acquisition_system2-DogNaTdt.jpg',
+          'real_time_data_acquisition_system3-CG8kqy0j.png',
+          'real_time_data_acquisition_system4-_kO14_HP.png'
+        ]
+      },
+      {
+        id: 'bibliometric-ar-research',
+        category: 'Bibliometric & Systematic Literature Research (2025–2026)',
+        title: 'Bibliometric Analysis & SLR on Augmented Reality and Digital Technology Trends in Libraries',
+        overview: 'Comprehensive quantitative bibliometric mapping (2014–2024 Scopus dataset) and Systematic Literature Review on AR technology for library digital asset management.',
+        problem: 'Rapid growth in digital library publications required systematic synthesis and network visualization to identify research gaps and practical implementation frameworks.',
+        role: 'First Author & Lead Researcher — Literature Screening, Metadata Reconciliation, and Bibliometric Network Mapping.',
+        workflow: 'Extracted Scopus metadata → Screened literature via Rayyan AI → Processed datasets in RStudio (Bibliometrix/Biblioshiny) → Constructed co-occurrence & thematic maps in VOSviewer.',
+        tools: ['Scopus', 'RStudio (Biblioshiny)', 'VOSviewer', 'Rayyan AI', 'MS Excel'],
+        deliverables: 'Scopus Q3 / Sinta 1 publication in Record and Library Journal (2025) and Bachelor Thesis (2026).',
+        images: [
+          'bibliometric_digital_technology_trends-D5NKXZfv.jpeg',
+          'bibliometric_digital_technology_trends2-B25LzsCh.png',
+          'bibliometric_digital_technology_trends3-COmP_r1a.png',
+          'bibliometric_digital_technology_trends4-CbyykJnw.png'
+        ]
+      },
+      {
+        id: 'lldikti-book-and-ojs',
+        category: 'Editorial & Publication Management — LLDikti Region 3 (2024)',
+        title: 'Accelerated Technical Book Publication & OJS Outage Continuity Workflow',
+        overview: 'End-to-end editorial management of a four-chapter institutional technical book and manual quality screening during a nationwide OJS outage.',
+        problem: 'Strict one-month publication timeline coupled with a nationwide Open Journal Systems (OJS) outage that risked halting journal review workflows.',
+        role: 'Journal Management Intern — Editorial Coordinator & Quality Compliance Screener.',
+        workflow: 'Executed manual compliance screenings for incoming articles during OJS downtime → Coordinated multi-stakeholder book layout and review → Accelerated 4-chapter technical book completion.',
+        tools: ['Open Journal Systems (OJS)', 'Editorial Quality Control', 'MS Office', 'Digital Publishing'],
+        deliverables: 'Completed 4-chapter technical book in 1 week against a 1-month deadline (75% faster turnaround) and maintained 100% publication compliance with zero backlog.',
+        images: [
+          'lldikti_technIcal_book_publication-DhKJ8jnr.jpeg',
+          'lldikti_technIcal_book_publication2-BJg87qVF.png',
+          'lldikti_technIcal_book_publication3-Crb67ay2.png',
+          'lldikti_technIcal_book_publication4-DaxRmGvo.jpeg',
+          'lldikti_technIcal_book_publication5-DCxrF3_s.png',
+          'lldikti_technIcal_book_publication6-B9R20_MB.jpg',
+          'lldikti_technIcal_book_publication7-DM69OSFg.jpg',
+          'lldikti_ojs-DrEYiK73.png',
+          'lldikti_ojs2-3jwixn3w.jpg'
+        ]
+      },
+      {
+        id: 'lldikti-archiving-smart-village',
+        category: 'Records Governance & Strategic Liaison — LLDikti Region 3 (2024)',
+        title: 'Large-Scale Research Contract Archiving, Smart Village Liaison & Academic Webinars',
+        overview: 'Structured archiving of hundreds of institutional research contracts, official correspondence management for the Smart Village program, and literacy webinars for 100+ lecturers.',
+        problem: 'High volume of institutional research contracts and cross-agency correspondence required systematic indexing to ensure 100% data integrity and rapid retrieval.',
+        role: 'Strategic Liaison, Records Archivist & Webinar Operations Facilitator.',
+        workflow: 'Structured digital and physical archives for hundreds of research contracts → Managed official governmental correspondence for Smart Village → Facilitated academic writing webinars & podcasts.',
+        tools: ['Records & Archive Governance', 'Advanced MS Excel', 'Official Correspondence', 'Event & Webinar Operations'],
+        deliverables: '100% data integrity across hundreds of archived contracts, seamless multi-agency Smart Village documentation, and literacy webinars for 100+ participants.',
+        images: [
+          'lldikti_research_contract_archiving-nno2TB1O.png',
+          'lldikti_research_contract_archiving2-DEja_1lk.jpeg',
+          'lldikti_research_contract_archiving3-BNZNMCMX.jpeg',
+          'lldikti_smart_village-Dg-4Hv5a.jpeg',
+          'lldikti_smart_village2-EasOR74a.png',
+          'lldikti_smart_village3-D014GsuF.png',
+          'lldikti_smart_village4-DCBuCRpB.jpeg',
+          'lldikti_smart_village5-ee7DiVH8.jpg',
+          'lldikti_smart_village6-jqu4VwPY.jpg',
+          'lldikti_smart_village7-Ct-wnRA0.png',
+          'lldikti_provesional_literacy_webinars-BU0DwQs2.jpeg',
+          'lldikti_provesional_literacy_webinars2-Cw6G2wua.jpeg',
+          'lldikti_provesional_literacy_webinars3-Ckeor1ky.png'
+        ]
+      },
+      {
+        id: 'kandaga-audit-and-informatio',
+        category: 'Library Automation & Metadata Auditing — Unpad (2022 & 2024)',
+        title: 'System Downtime Inventory Audit, Information Literacy & OJS Administration',
+        overview: 'Physical stock opname and metadata validation at Kandaga Central Library alongside OJS user administration at Informatio Journal UNPAD.',
+        problem: 'System downtime during physical inventory auditing required an alternative zero-error recording workflow to prevent cataloging delays.',
+        role: 'Library Assistant Intern & OJS Administrator Intern.',
+        workflow: 'Audited 2 large storage racks in 1 week via Google Spreadsheets during system downtime → Synchronized validated metadata into library database → Created 3 literacy content types & configured 18 OJS accounts in 1 day.',
+        tools: ['Library Automation System', 'Open Journal Systems (OJS)', 'Google Spreadsheets', 'Metadata Validation'],
+        deliverables: '100% inventory data integrity within a 1-week deadline, 3 information literacy modules, and rapid 1-day onboarding for 18 OJS editorial interns.',
+        images: [
+          'kandaga_system_downtime_recovery_workflow-CWuFXGYU.png',
+          'kandaga_information_literacy_content-hXQ13Y7X.png',
+          'kandaga_reference_collection_inventory_audit2-Cp6sZb6L.jpeg',
+          'kandaga_reference_collection_inventory_audit3-DFov9C59.jpeg',
+          'kandaga_reference_collection_inventory_audit4-C_iU1TCJ.jpg',
+          'kandaga_reference_collection_inventory_audit5-DwTcTFgS.jpg',
+          'infromatio_ojs-O0UflWup.png'
+        ]
+      },
+      {
+        id: 'epicentrum-governance-and-events',
+        category: 'Institutional Governance & Licensing — Epicentrum Fikom Unpad (2022–2023)',
+        title: 'International Festival Licensing, Standardized Correspondence & Event Conceptualization',
+        overview: 'Administrative workflow standardization, senior stakeholder licensing negotiations, and social-impact event conceptualization for Fikom Unpad’s flagship annual festival.',
+        problem: 'Cross-departmental correspondence and complex institutional licensing required a unified tracking framework and strict timeline accountability.',
+        role: 'First Secretary (2023) & Event Conceptor (2022).',
+        workflow: 'Designed standardized correspondence framework → Negotiated institutional licensing with faculty leadership & external partners → Documented 20+ strategic planning sessions & compiled final accountability reports in 1 week.',
+        tools: ['Corporate Secretarial Governance', 'Licensing Negotiation', 'Accountability Reporting', 'Stakeholder Coordination'],
+        deliverables: '100% legal/administrative licensing compliance, minutes for 20+ high-level meetings, and complete final accountability reports delivered within 1 week.',
+        images: [
+          'epicentrum_international_festival_final_reporting_licensing-0B2ht0Re.png',
+          'epicentrum_international_festival_final_reporting_licensing2-BEnQ488z.png',
+          'epicentrum_international_festival_final_reporting_licensing3-DmxuD9p3.png',
+          'epicentrum_international_festival_final_reporting_licensing4-CrWHbSzn.jpeg',
+          'epicentrum_impacfull_event_coceptualization-BXstv9mG.png',
+          'epicentrum_impacfull_event_coceptualization2-CxBrO7d6.jpeg'
+        ]
+      }
+    ];
+
+    const projectsContainer = document.getElementById('projectsContainer');
+    const projectModal = document.getElementById('projectModal');
+    const modalBody = document.getElementById('modalBody');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    function renderProjects() {
+      projectsContainer.innerHTML = PROJECTS_DATA.map((proj, idx) => `
+        <article class="project-card">
+          <div class="project-thumb-wrap" onclick="openProjectModal(${idx})">
+            <img src="${ASSET_BASE}${proj.images[0]}" alt="${proj.title}" loading="lazy" />
+            <span class="gallery-count-badge">📷 ${proj.images.length} Documentation Files</span>
+          </div>
+          <div class="project-body">
+            <div class="project-category">${proj.category}</div>
+            <h3 class="project-title">${proj.title}</h3>
+            <p class="project-detail-block"><strong>Overview:</strong> ${proj.overview}</p>
+            <p class="project-detail-block"><strong>Problem Statement:</strong> ${proj.problem}</p>
+            <p class="project-detail-block"><strong>My Role:</strong> ${proj.role}</p>
+            <p class="project-detail-block"><strong>Methodology / Workflow:</strong> ${proj.workflow}</p>
+            <p class="project-detail-block"><strong>Key Results / Deliverables:</strong> ${proj.deliverables}</p>
+            <div class="tag-row" style="margin-bottom: 1rem;">
+              ${proj.tools.map(t => `<span class="tag">${t}</span>`).join('')}
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-outline" style="width: 100%; justify-content: center;" onclick="openProjectModal(${idx})">
+                View All ${proj.images.length} Documentation Screenshots
+              </button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    window.openProjectModal = function(index) {
+      const proj = PROJECTS_DATA[index];
+      modalBody.innerHTML = `
+        <div class="project-category">${proj.category}</div>
+        <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem;">${proj.title}</h2>
+        <p class="project-detail-block"><strong>My Role:</strong> ${proj.role}</p>
+        <p class="project-detail-block"><strong>Results & Impact:</strong> ${proj.deliverables}</p>
+        <div class="modal-gallery-grid">
+          ${proj.images.map(img => `
+            <a href="${ASSET_BASE}${img}" target="_blank" rel="noopener">
+              <img src="${ASSET_BASE}${img}" alt="${proj.title} documentation" loading="lazy" />
+            </a>
+          `).join('')}
+        </div>
+      `;
+      projectModal.classList.add('active');
+    };
+
+    closeModalBtn.addEventListener('click', () => {
+      projectModal.classList.remove('active');
+    });
+
+    projectModal.addEventListener('click', (e) => {
+      if (e.target === projectModal) projectModal.classList.remove('active');
+    });
+
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    renderProjects();
+  </script>
+</body>
+</html>
